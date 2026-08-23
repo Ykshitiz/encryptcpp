@@ -2,6 +2,9 @@
 
 A C++ command-line tool that recursively encrypts or decrypts every file in a given directory using a key stored in a local `.env` file.
 
+
+A C++ command-line tool that recursively encrypts or decrypts every file in a given directory using a key stored in a local `.env` file.
+
 ## Overview
 
 File Encryptor walks a target directory tree, and for every regular file it finds, applies a byte-wise transformation (encryption or decryption) based on an integer key. Tasks are queued and executed through a simple task-management layer (`ProcessManagement`), and each file is read/written in place through a shared `IO` abstraction.

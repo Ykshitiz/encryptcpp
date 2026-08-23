@@ -6,14 +6,14 @@ CRYPTION_TARGET = cryption
 
 MAIN_SRC = main.cpp \
            src/app/processes/ProcessManagement.cpp \
-           src/app/fileHandling/IO.cpp \
-           src/app/fileHandling/ReadEnv.cpp \
+           src/app/FileHandling/IO.cpp \
+           src/app/FileHandling/ReadEnv.cpp \
            src/app/encryptDecrypt/Cryption.cpp
 
 CRYPTION_SRC = src/app/encryptDecrypt/CryptionMain.cpp \
                src/app/encryptDecrypt/Cryption.cpp \
-               src/app/fileHandling/IO.cpp \
-               src/app/fileHandling/ReadEnv.cpp
+               src/app/FileHandling/IO.cpp \
+               src/app/FileHandling/ReadEnv.cpp
 
 MAIN_OBJ = $(MAIN_SRC:.cpp=.o)
 CRYPTION_OBJ = $(CRYPTION_SRC:.cpp=.o)
